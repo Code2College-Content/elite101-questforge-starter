@@ -6,7 +6,7 @@ Heads up: this module is half-built on purpose. `world_summary` works, but
 
 
 def world_summary(data):
-    return data["title"] + ": " + str(len(data["rooms"])) + " rooms"
+    return data["name"] + ": " + str(len(data["rooms"])) + " rooms"
 
 
 def exits_report(data):

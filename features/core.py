@@ -26,7 +26,7 @@ def room_count(data):
 
 
 def move(data, current_key, direction):
-    return data["rooms"][current_key]["exits"].get(direction, current_key)
+    return data["rooms"][current_key]["exits"].get(direction.upper(), current_key)
 
 
 def exits_by_room(data):

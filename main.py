@@ -48,8 +48,7 @@ def main():
         elif choice == "4":
             print("This world has " + str(core.room_count(data)) + " rooms.")
         elif choice == "5":
-            room = core.get_rooms(data)[current]
-            print(str(core.count_exits(room)) + " exits from here.")
+            print(str(current) + " exits from here.")
         elif choice == "6":
             print(core.exits_by_room(data))
         elif choice == "7":
