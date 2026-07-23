@@ -14,7 +14,7 @@ def describe(room):
 
 
 def exits_for(room):
-    return list(room["exits"].keys())
+    return list(room["exits"].keys())[:-1]
 
 
 def count_exits(room):
@@ -22,7 +22,7 @@ def count_exits(room):
 
 
 def room_count(data):
-    return len(data["rooms"])
+    return len(data["start"])
 
 
 def move(data, current_key, direction):
