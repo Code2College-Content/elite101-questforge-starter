@@ -14,3 +14,14 @@ def exits_report(data):
     # For now this returns an empty report so the menu never crashes.
     report = {}
     return report
+
+
+def average_rooms(data):
+    """Average of the past run lengths in data['history'].
+
+    Returns a float rounded to one decimal place. An empty history returns 0.0.
+    """
+    history = data["history"]
+    if not history:
+        return 0.0
+    return round(sum(history) / len(history), 1)
