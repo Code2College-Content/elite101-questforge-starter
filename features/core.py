@@ -6,6 +6,7 @@ def get_rooms(data):
 
 
 def start_room(data):
+    """Retrieves data from storage.py and starts player there."""
     return data["start"]
 
 
